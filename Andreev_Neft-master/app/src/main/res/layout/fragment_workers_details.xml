@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".workersDetailsFragment">
+
+    <TextView
+        android:id="@+id/tvNameFullDetalis"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#B16F17"
+        android:fontFamily="serif"
+        android:gravity="center"
+        android:padding="5dp"
+        android:text="Москвина Ольга Константиновна"
+        android:textColor="@color/white"
+        android:textSize="32dp" />
+
+    <TextView
+        android:id="@+id/tvEducationDetalis"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#C5973E"
+        android:padding="10dp"
+        android:text="Оброзование: Высшее, ОГПИ им. Т.Г. Шевченко, 1997 г."
+        android:textColor="@color/white" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="52dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tvSpecializationDetalis"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="15dp"
+                android:text="Специализация преподавателя по диплому: Учитель русского языка и литературы по специальности «Филология»" />
+            <TextView
+                android:id="@+id/tvPositionDetalis"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="15dp"
+                android:text="Должность преподавателя: Методист, преподаватель" />
+            <TextView
+                android:id="@+id/tvTeachingSubjectsDetalis"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="15dp"
+                android:text="Предметы, которые ведет преподаватель: Русский язык, литература" />
+            <TextView
+                android:id="@+id/tvAchievementsDetalis"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="15dp"
+                android:text="Достижения, награды и звания: Высшая категория «Методист», приказ от 02.06.2022 №01-21/724 Высшая категория «Преподаватель», приказ от 02.06.2022 №01-21/724" />
+            <TextView
+                android:id="@+id/tvProfessionalDevelopmentDetalis"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="15dp"
+                android:text="Курсы повышения квалификации: Повышение квалификации:\n Повышение квалификации преподавателей СПО в соответствии с ФГОС СОО в  предметной области «Русский язык и литература», ФГБОУ ВО «Оренбургский государственный педагогический университет»,   2020 г.; «Цифровые технологии в образовании», ФГАОУ ДПО Академия Минпросвещения Россиии, 2021г.; «Методика преподавания общеобразовательной дисциплины «Литература» с учетом профессиональной направленности основных образовательных программ СПО», ФГАОУ ДПО Академия Минпросвещения Россиии, 2021 г.«Методика преподавания общеобразовательной дисциплины «Русский язык» с учетом профессиональной направленности основных образовательных программ СПО», ФГАОУ ДПО Академия Минпросвещения Россиии, 2021 г. Разговоры о важном: система работы классного руководителя (куратора), ФГАОУ ДПО Академия Минпросвещения Россиии, 2022 г.;Методика преподавания общеобразовательной дисциплины «Родной язык» с учетом профессиональной направленности основных образовательных программ СПО» (ФГАОУ ДПО Академия Минпросвещения Россиии, 2022 г.; «Методика преподавания общеобразовательной дисциплины «Родная литература» с учетом профессиональной направленности основных образовательных программ СПО» (ФГАОУ ДПО Академия Минпросвещения Россиии, 2022 г. Инновационные формы работы в профессиональном образовании, Ассоциация образовательных организаций «Профессионал», г. Самара, 2022 г." />
+            <TextView
+                android:id="@+id/tvYearsOfExperienceDetalis"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="15dp"
+                android:text="Общий стаж работы в годах: 24" />
+            <TextView
+                android:id="@+id/tvTeachingExperienceDetalis"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="15dp"
+                android:text="Стаж работы преподавателем в годах: 24" />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

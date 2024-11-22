@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/my_naficator"
+    app:startDestination="@id/menuFragment">
+
+    <fragment
+        android:id="@+id/mapsFragment"
+        android:name="com.example.dimabakief_neft.MapsFragment"
+        android:label="fragment_maps"
+        tools:layout="@layout/fragment_maps" >
+        <action
+            android:id="@+id/action_mapsFragment_to_menuFragment"
+            app:destination="@id/menuFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/developerFragment"
+        android:name="com.example.dimabakief_neft.DeveloperFragment"
+        android:label="fragment_developer"
+        tools:layout="@layout/fragment_developer" >
+        <action
+            android:id="@+id/action_developerFragment_to_menuFragment"
+            app:destination="@id/menuFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/menuFragment"
+        android:name="com.example.dimabakief_neft.MenuFragment"
+        android:label="fragment_menu"
+        tools:layout="@layout/fragment_menu" >
+        <action
+            android:id="@+id/nv_map"
+            app:destination="@id/mapsFragment"
+            app:enterAnim="@android:anim/linear_interpolator" />
+        <action
+            android:id="@+id/nvDeveleper"
+            app:destination="@id/developerFragment" />
+        <action
+            android:id="@+id/nvGuide"
+            app:destination="@id/workersFragment" />
+        <action
+            android:id="@+id/nvDirectioFragment"
+            app:destination="@id/directioFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/workersFragment"
+        android:name="com.example.dimabakief_neft.WorkersFragment"
+        android:label="fragment_guide"
+        tools:layout="@layout/fragment_workers" >
+        <action
+            android:id="@+id/nvExetWorkerFragment"
+            app:destination="@id/menuFragment" />
+        <action
+            android:id="@+id/nvWorgersDetalis"
+            app:destination="@id/workersDetailsFragment" />
+        <argument android:name="Workers"
+            app:argType="boolean" />
+    </fragment>
+    <fragment
+        android:id="@+id/directioFragment"
+        android:name="com.example.dimabakief_neft.DirectioFragment"
+        android:label="fragment_directio"
+        tools:layout="@layout/fragment_directio" >
+        <action
+            android:id="@+id/action_directioFragment_to_menuFragment"
+            app:destination="@id/menuFragment" />
+        <action
+            android:id="@+id/nvDirectionDetalisFragment"
+            app:destination="@id/directioDetaliskFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/workersDetailsFragment"
+        android:name="com.example.dimabakief_neft.workersDetailsFragment"
+        android:label="fragment_workers_details"
+        tools:layout="@layout/fragment_workers_details" >
+        <action
+            android:id="@+id/action_workersDetailsFragment_to_workersFragment"
+            app:destination="@id/workersFragment" />
+        <argument android:name="WorgersDetalis" />
+    </fragment>
+    <fragment
+        android:id="@+id/directioDetaliskFragment"
+        android:name="com.example.dimabakief_neft.directioDetaliskFragment"
+        android:label="fragment_directio_detalisk"
+        tools:layout="@layout/fragment_directio_detalisk" >
+        <action
+            android:id="@+id/action_directioDetaliskFragment_to_directioFragment"
+            app:destination="@id/directioFragment" />
+        <argument android:name="MyDirections" />
+    </fragment>
+</navigation>
